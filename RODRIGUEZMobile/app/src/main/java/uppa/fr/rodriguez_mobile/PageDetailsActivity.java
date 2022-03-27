@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -22,10 +21,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import uppa.fr.rodriguez_mobile.adapter.CharacterAdapter;
 import uppa.fr.rodriguez_mobile.adapter.EpisodeAdapter;
 import uppa.fr.rodriguez_mobile.api.CharacterAPI;
-import uppa.fr.rodriguez_mobile.api.Episode;
+import uppa.fr.rodriguez_mobile.model.Episode;
 import uppa.fr.rodriguez_mobile.model.Character;
 
 public class PageDetailsActivity extends AppCompatActivity {

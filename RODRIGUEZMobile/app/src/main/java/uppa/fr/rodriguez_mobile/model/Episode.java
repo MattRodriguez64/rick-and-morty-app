@@ -1,4 +1,4 @@
-package uppa.fr.rodriguez_mobile.api;
+package uppa.fr.rodriguez_mobile.model;
 
 public class Episode {
 

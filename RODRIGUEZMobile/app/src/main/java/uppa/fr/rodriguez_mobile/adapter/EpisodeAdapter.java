@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import uppa.fr.rodriguez_mobile.R;
-import uppa.fr.rodriguez_mobile.api.Episode;
-import uppa.fr.rodriguez_mobile.model.Character;
+import uppa.fr.rodriguez_mobile.model.Episode;
 
 public class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.EpisodeViewHolder>{
 
