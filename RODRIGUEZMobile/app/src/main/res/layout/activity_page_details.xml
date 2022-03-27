@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageDetailsActivity">
+
+    <ImageView
+        android:id="@+id/character_image_back"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <LinearLayout
+        android:id="@+id/name_status_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/character_image_back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/character_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/character_image_back"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/character_status_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/character_image_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spiece_gender_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_status_detail"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/character_spiece_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/name_status_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/character_gender_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/name_status_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/episode_number_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spiece_gender_detail"
+        android:background="@color/gray"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/episode_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/episode_list_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/episode_number_detail"
+        android:layout_marginTop="436dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/episode_recycler_list_detail"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
